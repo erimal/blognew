@@ -41,10 +41,34 @@ class AppController extends Controller
     {
         parent::initialize();
 
+        $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'loginRedirect' => [
+                'controller' => 'Articles',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Pages',
+                'action' => 'display',
+                'home'
+            ]
+        ]);		
+		
+		
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
     }
 
+	/**
+	 this is to authenicate the form
+	
+	*/
+	
+	    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index', 'view', 'display']);
+    }
+	
     /**
      * Before render callback.
      *

@@ -1,0 +1,12 @@
+2016-05-30 21:43:59 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Model" could not be found.
+Exception Attributes: array (
+  'class' => 'Model',
+)
+Stack Trace:
+#0 X:\wamp\www\blognew\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(214): Cake\Console\ShellDispatcher->findShell('model')
+#1 X:\wamp\www\blognew\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 X:\wamp\www\blognew\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 X:\wamp\www\blognew\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
