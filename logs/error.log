@@ -265,3 +265,61 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-05-31 21:26:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /blognew/user/logout/
+Stack Trace:
+#0 X:\wamp\www\blognew\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-02 06:00:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Logout could not be found.
+Exception Attributes: array (
+  'class' => 'Logout',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /blognew/logout
+Stack Trace:
+#0 X:\wamp\www\blognew\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-02 06:00:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /blognew/user/logout
+Stack Trace:
+#0 X:\wamp\www\blognew\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-02 06:26:55 Error: Fatal Error (4): syntax error, unexpected ''admin'' (T_CONSTANT_ENCAPSED_STRING) in [X:\wamp\www\blognew\src\Controller\AppController.php, line 81]
+Request URL: /blognew/users/login
+Referer URL: http://localhost:8000/blognew/users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-02 06:26:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''admin'' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /blognew/users/login
+Referer URL: http://localhost:8000/blognew/users/login
+Stack Trace:
+#0 X:\wamp\www\blognew\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'X:\\wamp\\www\\blo...', 81)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

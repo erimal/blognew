@@ -56,4 +56,16 @@ class ArticlesTable extends Table
 
         return $validator;
     }
+	
+	/**
+	
+		To tell whether or not the user is authorized to edit the article 
+	*/
+	
+	public function isOwnedBy($articleId, $userId)
+	{
+		//return $this->exists(['id' => $articleId, 'user_id' => $userId]);
+	}
+	
+	
 }
